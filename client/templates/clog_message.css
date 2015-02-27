@@ -1,0 +1,51 @@
+
+
+#clog>ul>li{
+    padding: 0.2em 0;
+    border-right: 0.8em transparent solid;
+    border-left: 0.8em transparent solid;
+    cursor: pointer;
+}
+
+#clog>ul>li:not(:last-of-type){
+    border-bottom: 0.1rem rgba(0,0,0,1.0) solid;
+}
+
+#clog>ul>li:first-of-type{
+    padding-top: 0.4em
+}
+#clog>ul>li:last-of-type{
+    padding-bottom: 0.4em
+}
+
+#clog>ul>li span{
+    text-transform: uppercase;
+    padding: 2px 3px;
+}
+
+
+#clog>ul>li .clog--level--,
+#clog>ul>li .clog--level--log{
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#clog>ul>li .clog--level--info{
+    background-color: rgba(2, 84, 2, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#clog>ul>li .clog--level--warn{
+    background-color: rgba(255, 170, 0, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#clog>ul>li .clog--level--error{
+    background-color: rgba(177, 0, 6, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#clog>ul>li .clog--level--debug{
+    background-color: rgba(17, 72, 132, 1);
+    color: rgba(255, 255, 255, 1);
+}
