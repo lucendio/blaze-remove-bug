@@ -5,27 +5,7 @@
 
 Template['clog_onscreen'].helpers({
     clogMessages: function(  ){
-        return [
-            {
-                message: 'foobar',
-                level: {
-                    label: 'log'
-                }
-
-            },
-            {
-                message: 'msg from rendered',
-                level: {
-                    label: 'info'
-                }
-            },
-            {
-                message: 'msg 3',
-                level: {
-                    label: 'log'
-                }
-            }
-        ]
+        return Session.get('testList');
     }
 });
 
@@ -38,7 +18,27 @@ Template['clog_onscreen'].events({
 
 
 Template['clog_onscreen'].created = function () {
+    Session.set('testList',[
+                {
+                    message: 'foobar',
+                    level: {
+                        label: 'log'
+                    }
 
+                },
+                {
+                    message: 'msg from rendered',
+                    level: {
+                        label: 'info'
+                    }
+                },
+                {
+                    message: 'msg 3',
+                    level: {
+                        label: 'log'
+                    }
+                }
+            ]);
 };
 
 
